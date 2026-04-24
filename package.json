@@ -1,7 +1,7 @@
 {
   "name": "devtinder",
   "version": "1.0.0",
-  "description": "tinder for devs",
+  "description": "test description",
   "main": "index.js",
   "scripts": {
     "start": "node src/app.js",
@@ -11,7 +11,7 @@
     "nodejs",
     "javascript"
   ],
-  "author": "Akshay Saini",
+  "author": "Biswanath",
   "license": "ISC",
   "dependencies": {
     "@aws-sdk/client-ses": "^3.716.0",

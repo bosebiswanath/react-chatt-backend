@@ -7,7 +7,7 @@ const http = require("http");
 
 require("dotenv").config();
 
-require("./utils/cronjob");
+
 
 app.use(
   cors({
@@ -23,7 +23,7 @@ const profileRouter = require("./routes/profile");
 const requestRouter = require("./routes/request");
 const userRouter = require("./routes/user");
 //const paymentRouter = require("./routes/payment");
-const initializeSocket = require("./utils/socket");
+
 const chatRouter = require("./routes/chat");
 
 app.use("/", authRouter);
@@ -34,7 +34,7 @@ app.use("/", userRouter);
 app.use("/", chatRouter);
 
 const server = http.createServer(app);
-initializeSocket(server);
+
 
 const PORT = process.env.PORT || 8888;
 
